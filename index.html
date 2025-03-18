@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <h1>Entre em <span>Contato</span></h1>
+
+        <input type="hidden" name="access_key" value="539455c9-91d0-4349-b685-b1bc4457ac18">
+
+        <div>
+            <input type="text" name="nome" placeholder="Nome">
+            <input type="email" name="email" placeholder="E-mail">
+        </div>
+
+        <div>
+            <input type="text" name="telefone" placeholder="Telefone">
+            <input type="text" name="assunto" placeholder="Assunto">
+            <!-- Alterar o Assunto para Select -->
+        </div>
+
+        <textarea name="mensagem" placeholder="Digite sua mensagem..."></textarea>
+        
+        <!-- Honeypot Spam Protection -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+        <button type="submit">Enviar Mensagem</button>
+    </form>
+</body>
+
+</html>
